@@ -19,3 +19,7 @@ The data itself about the sepal and petal measuresments of the Iris Setosa, Iris
 
 
 
+https://github.com/Prasanna-Mohanty/IRIS-Dataset-Analysis-Using-Python/blob/master/IRIS.ipynb
+https://stackoverflow.com/questions/3263672/the-difference-between-sys-stdout-write-and-print
+https://www.statology.org/pandas-mean-by-group/
+

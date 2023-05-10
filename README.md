@@ -26,3 +26,5 @@ https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 https://towardsdatascience.com/classification-basics-walk-through-with-the-iris-data-set-d46b0331bf82
 https://www.tutorialspoint.com/exploratory-data-analysis-on-iris-dataset
 https://www.geeksforgeeks.org/python-seaborn-tutorial/
+https://datagy.io/histogram-python/
+https://stackoverflow.com/questions/31726643/how-to-plot-in-multiple-subplots

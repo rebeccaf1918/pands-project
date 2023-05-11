@@ -29,3 +29,8 @@ https://www.geeksforgeeks.org/python-seaborn-tutorial/
 https://datagy.io/histogram-python/
 https://stackoverflow.com/questions/31726643/how-to-plot-in-multiple-subplots
 https://stackoverflow.com/questions/28162358/append-a-header-for-csv-file/28162530#28162530
+https://stackoverflow.com/questions/34091877/how-to-add-header-row-to-a-pandas-dataframe
+https://matplotlib.org/3.https://www.geeksforgeeks.org/how-to-set-the-spacing-between-subplots-in-matplotlib-in-python/5.1/api/_as_gen/matplotlib.pyplot.suptitle.html
+https://stackoverflow.com/questions/72050177/futurewarning-dropping-of-nuisance-columns-in-dataframe-reductions-warning-wh
+https://www.statology.org/pandas-mean-by-group/
+https://stackoverflow.com/questions/34926517/stop-sys-stdout-from-writing-to-a-text-file

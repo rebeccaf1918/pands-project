@@ -41,6 +41,8 @@ Contained in each species sample, there are 4 measurements available, measured i
 3. Petal Length 
 4. Petal Width   
 
+![image](https://github.com/rebeccaf1918/pands-project/assets/123907810/4da42b93-c8be-4770-a872-732e612d1b11)
+
 By collecting this data, Fisher (and Anderson) wanted to see if it would be possible to determine or even predict the Iris species type based on the 4 above features alone.
 
 

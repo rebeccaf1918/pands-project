@@ -102,8 +102,16 @@ I then saved the 4 histograms created for each of the features to a .png in the 
 
 <img width="301" alt="Screenshot 2023-05-12" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/1343e58b-8f67-4157-9590-d8b38dbb3d3e">
 
+From the above histograms, I came to the following conclusions:
+1. Due to the fact the histograms do not specify the species corresponding to each feature, I could see that 
+there was standalone bins(or bars) to the left, indicating shorter petal length and width.  At this point, I cannot determine which flower that would be, but I know that petal length and petal width are distinctive, which will be important for determining the species.
+2. There is a lot of overlap between the 3 species regarding sepal length and sepal width, so those features will not be as distinctive for determining species.
 
+However, I decided it would be more useful to visual the data if the histograms of the Length & Width of the features specified the species type. I wanted to compare Sepal Length across the three species, Sepal Width across the three species, and so on.
+Thus, in order to do this, I needed to separate the 'Species' column into 3 parts for each of the species type. Through the information I gathered at the beginning of the project, I know that the 3 species type are split equally into 50 entries on each. I used numpy to use the formatting of numpy tuples as indexes i.e the first 50 lines are the Setosa category, 51 onwards is versicolor and so on.
+Then, I used the built-in .distplot() function which displays multiple statistical representations of numerical data, including histrograms, rug plot and kernel density estimation. I chose the distplot function as I felt it was easier to comprehend the visualisation of data with these features on the same axis.
 
+![alt text](C:\Users\rfeel\OneDrive\Desktop\pands\pands-project\Histogram of Sepal Length of the Iris Setosa, Versicolor & Virginica.png)
 
 
 

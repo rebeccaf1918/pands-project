@@ -3,21 +3,21 @@
 Created by Rebecca Feeley   
 Student ID G00425652  
 
-## Introduction
+# Introduction
 This repository contains my pands project for the Programming and Scripting module which forms part of the ATU Galway HDIP in Data Analytics 2023.   
 This repository contains the research conducted on the Iris Data Set, the introduction and manipulation of the data, and the analysis conducted on the data, producing various visualisations such as historgrams and scatter plots, and the summary of my findings.  
 
-## Technical Requirements
-# To download this Project
+# Technical Requirements
+## To download this Project
 1. Go to my repository on Github at https://github.com/rebeccaf1918/pands-project
 2. From there, you can choose how to use the repository whether that is downloading it as a zipfile or cloning the repository.  
 
-# Requirements to run the code
+## Requirements to run the code
 This code is written in Python programming language and there are a few requirments necessary for the operate of the project code.
 1. Install Python - latest version 3.11.0 (I recommend to install Anaconda with it for expanded programming   capabilities)
 2. Install the Visual Studio Code (or alternativly, your source code editor of preference)  
 3. Install Cmder (or alternatively, your command line interpreter of preference)  
-4. Install all the Python libraries required, in this case they are:  
+4. Install all the Python libraries required, in this case they are:
 - Pandas
 - Numpy
 - Seaborn

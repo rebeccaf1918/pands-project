@@ -142,6 +142,11 @@ Pandas includes a bulit-in function which I used to create the scatter plots. Ho
 I then used the Seaborn function sea.scatterplot to create a scatter plot displaying the relationship between Sepal Length & Sepal Width, with a separate color dot corresponding to each species type.
 I also completed a scatter plot displaying the relationship between Petal Length & Petal Width, with a separate color dot corresponding to each species type.
 
+<img width="513" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/610a95e3-170e-4c81-a6f8-0c671cfe7cc5  
+                                  
+<img width="390" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/b8875429-7182-4ec8-9cbe-ef36d0213de9">  
+
+                                                                                                                                      
 The scatter plots visualised that:
 1. 
 

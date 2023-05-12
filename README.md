@@ -107,8 +107,13 @@ From the above histograms, I came to the following conclusions:
 1. Due to the fact the histograms do not specify the species corresponding to each feature, I could see that 
 there was standalone bins(or bars) to the left, indicating shorter petal length and width.  At this point, I cannot determine which flower that would be, but I know that petal length and petal width are distinctive, which will be important for determining the species.
 2. There is a lot of overlap between the 3 species regarding sepal length and sepal width, so those features will not be as distinctive for determining species.
+3. The most frequent Sepal Length is between 6 and 6.5 (I should note the histogram is slightly skewed to the right)
+4. The most frequent Sepal Width is between 3 and 3.5
+5. The most frequent Petal Length is between 1 and 2.
+6. The most frequent Petal Width is between 0 and 0.5
 
-However, I decided it would be more useful to visual the data if the histograms of the Length & Width of the features specified the species type. I wanted to compare Sepal Length across the three species, Sepal Width across the three species, and so on.
+
+However, I decided it would be more useful to visualise the data if the histograms of the Length & Width of the features specified the species type. I wanted to compare Sepal Length across the three species, Sepal Width across the three species, and so on.
 Thus, in order to do this, I needed to separate the 'Species' column into 3 parts for each of the species type. Through the information I gathered at the beginning of the project, I know that the 3 species type are split equally into 50 entries on each. I used numpy to use the formatting of numpy tuples as indexes i.e the first 50 lines are the Setosa category, 51 onwards is versicolor and so on.
 Then, I used the built-in .distplot() function which displays multiple statistical representations of numerical data, including histrograms, rug plot and kernel density estimation. I chose the distplot function as I felt it was easier to comprehend the visualisation of data with these features on the same axis.
 
@@ -120,11 +125,26 @@ Then, I used the built-in .distplot() function which displays multiple statistic
 
 <img width="392" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/08424ba9-3940-4297-8897-2be49cac8ed6">  
 
+The distplots allowed me to see that:
+1. The Petal Length & Petal Width of the Iris Setosa frequently are much shorter than the same features of the other two species.  
+2. There is a lot of overlap amongst the three species with regard to the Sepal Length & Sepal Width and as a result, these features will not be very helpful for distinguishing species type.
+3. There is very little overlap amongst the three species with regard to the Petal Length & Petal Width. 
+4. There is no overlap beween the Setosa and the other two species type, and slight overlap between the Versicolor and Virginica species with regard to Petal Length and Petal Width. Thus, this will be more useful to distinguish the species type.
 
-
-
+I then looked at scatterplots to build upon the data insights above.  
 
 ### Scatterplots
+Per the requirements of the project, I then created scatter plots of the data set.
+Scatter plots are very helpful for showing the relationship between two numerical data values. Thus, I first began by creating a scatter plot showing the correlation relationship between the Sepal Length and Sepal Width (without specifying which of the dots correspond to which species type.)
+I also completed such a scatter plot of the Petal Length and Petal Width.
+Pandas includes a bulit-in function which I used to create the scatter plots. However, I did not save these as I found the scatter plots which specified species type was more helpful and I did not want to clutter the repository.  
+
+I then used the Seaborn function sea.scatterplot to create a scatter plot displaying the relationship between Sepal Length & Sepal Width, with a separate color dot corresponding to each species type.
+I also completed a scatter plot displaying the relationship between Petal Length & Petal Width, with a separate color dot corresponding to each species type.
+
+The scatter plots visualised that:
+1. 
+
 
 
 ### Heatmap & Pairplot

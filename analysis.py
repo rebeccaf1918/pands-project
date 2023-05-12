@@ -115,7 +115,7 @@ plt.close()
 
 iris_data = pd.read_csv("iris_dataset.csv", names=column_names)
 iris_data_scatter = iris_data.plot(kind='scatter', x='Petal_Length(cm)', y='Petal_Width(cm)', color= 'purple', title='Petal Length x Petal Width Correlation')
-plt.show()
+plt.show() # I have not saved these as png images as tthe scatter plots with species type specified are more useful; otherwise the repository is unnecessarily cluttered
 plt.close()
 
 # Scatter plot of Sepal Length x Sepal Width

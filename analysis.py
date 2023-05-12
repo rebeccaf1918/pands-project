@@ -61,7 +61,7 @@ Setosa = iris_data[0:50] # includes 1st to 49th row
 Versicolor = iris_data[50:100]
 Virginica = iris_data[100:150]
 
-#Histogram of each species' sepal length in centimeters
+#Histogram of each species' sepal length in centimeters (using distplot feature which also displays normal curve and a rugplot)
 sea.distplot(Setosa["Sepal_Length(cm)"], color= "green") # I used seaborn to create a histogram of the Sepal Length of the three species
 sea.distplot(Versicolor["Sepal_Length(cm)"], color= "blue")
 sea.distplot(Virginica["Sepal_Length(cm)"], color= "purple")
@@ -73,7 +73,7 @@ plt.subplots_adjust(bottom=0.2) # the y axis label was not visible until I adjus
 plt.savefig('Histogram of Sepal Length of the Iris Setosa, Versicolor & Virginica.png')
 plt.close() # to ensure that the histograms do not overlap and become muddled
 
-# Histogram of each species' sepal width
+# Histogram of each species' sepal width (using distplot feature)
 sea.distplot(Setosa["Sepal_Width(cm)"], color= "green")
 sea.distplot(Versicolor["Sepal_Width(cm)"], color= "blue")
 sea.distplot(Virginica["Sepal_Width(cm)"], color= "purple")
@@ -114,38 +114,35 @@ plt.close()
 
 
 
-
-
-
-
-
-
-
-
-
-'''
-##### Scatter Plots #######   f    MULTIVARITAE ANALYSIS OF CORRELATION FIRST BETWEEN SIMILAR CHARACTERISTICS THEN SPECIES
+##### Scatter Plots ######
 iris_data = pd.read_csv("iris_dataset.csv", names=column_names)
 iris_data_scatter = iris_data.plot(kind='scatter', x='Sepal_Length(cm)', y='Sepal_Width(cm)', color='purple', title='Sepal Length x Sepal Width Correlation')
 plt.show()
+plt.close()
+
 iris_data = pd.read_csv("iris_dataset.csv", names=column_names)
-iris_data_scatter = iris_data.plot(kind='scatter', x='Petal_Length(cm)', y='Petal_Width(cm)', color= 'pink', title='Petal Length x Petal Width Correlation')
+iris_data_scatter = iris_data.plot(kind='scatter', x='Petal_Length(cm)', y='Petal_Width(cm)', color= 'purple', title='Petal Length x Petal Width Correlation')
 plt.show()
+plt.close()
 
-sea.scatterplot(data=iris_data, x='Sepal_Length(cm)', y='Sepal_Width(cm)', hue='Species')
-plt.title('Correlation between Sepal Length & Width of each Species')
-plt.plot() #split by species diff colours
-plt.show()  ##### From the above graph we can see that (REWRITE)
-# Iris-virginica has a longer sepal length while Iris-setosa has larger sepal width
-# For setosa sepal width is more than sepal length
+# Scatter plot of Sepal Length x Sepal Width
+sea.scatterplot(data=iris_data, x='Sepal_Length(cm)', y='Sepal_Width(cm)', hue='Species')# this function creates a scatter plot and I have specified the data to use for the x and y axis.
+plt.title('Correlation between Sepal Length & Width (with species type specified)')
+plt.plot() 
+plt.savefig('Scatter plot of Sepal Length x Sepal Width.png')  # save image to png file 
+plt.close() # so that the data is not all put on same axis; this scatter plot is created and the data stream is closed so the next scatter plot is not imposed onto it.
 
+# Scatter plot of Petal Length x Petal Width
 sea.scatterplot(data=iris_data, x='Petal_Length(cm)', y='Petal_Width(cm)', hue='Species') # hue is used to specify that the each species type should have a different colour
-plt.title('Correlation between Petal Length & Width of each Species')
-plt.plot()#split by species diff colours
-plt.show()
+plt.title('Correlation between Petal Length & Width (with species type specified)')
+plt.plot()
+plt.savefig('Scatter plot of Petal Length x Petal Width.png')
+plt.close()
 
+
+# Pairplot of variables and species combined
 sea.pairplot(iris_data, hue='Species')
 plt.plot()
 plt.show() ### fix up formatting
 
-'''
+

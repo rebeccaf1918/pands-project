@@ -31,6 +31,8 @@ with open ("Iris_summary_data.txt", "w") as f: #w to write to file and opened it
     print("To check if the dataset has equal rows in each species column i.e is balanced\n",iris_data.value_counts("Species"), '\n')
     print("The median value for each column grouped by species is:\n", iris_data.groupby("Species").median(),'\n')  
     print("The mean value for each column grouped by species is:\n", iris_data.groupby("Species").mean(), '\n')
+    print("The minimum measurement for each species is:\n", iris_data.groupby("Species").min(), '\n')
+    print("The maximum measurement for each species is:\n", iris_data.groupby("Species").max(), '\n')
     sys.stdout = original_stdout # this changes the output of any subsequent code back to the terminal console itself
 
 

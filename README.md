@@ -28,7 +28,7 @@ The [Iris Flower Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set) i
 "The Use of Multiple Measurements in Taxonomic Problems as an example of Linear Discriminant Analysis."  
 The data itself about the sepal and petal measuresments of the Iris Setosa, Iris Virginica and Iris Versicolour flowers were collected by Dr Edgar Anderson in Canada.   
 The Iris data set has long been utilised in Data Analysis, Statistics and Machine Learning, with everyone from beginners to experts being familiar with it.   
-The data set is used for multivariate data analysis and in Machine Learning as a test study for various statistical classification techniques, due to the simplicity and small sample size of the data set.  
+The data set is used for multivariate data analysis and in Machine Learning as a test study for various statistical classification techniques, due to the simplicity, small and uniformly measured sample size of the data set and lack of null values or missing values.   
 
 The Iris Data Set contains 50 samples from each of the three species of Iris Flower:
 1. Iris Setosa
@@ -43,8 +43,71 @@ Contained in each species sample, there are 4 measurements available, measured i
 
 ![image](https://github.com/rebeccaf1918/pands-project/assets/123907810/4da42b93-c8be-4770-a872-732e612d1b11)
 
-By collecting this data, Fisher wanted to see if it would be possible to determine or even predict the Iris species type based on the 4 above features alone.  
-Using various combinations of these 4 features, Fisher created a linear discriminant model to distinguish each species type from each other.
+By collecting the data on the 4 attributes from each of the 3 species, Fisher wanted to see if it would be possible to determine or even predict the Iris species type based on the 4 above features alone.  
+Using various combinations of these 4 features, Fisher created a linear discriminant model to distinguish each species type from each other.  
+The data set consists of 4 columns with the measurements of Sepal Length, Sepal Width, Petal Length, Petal Width; and a 5th column which displays the species class.  
+
+
+# My Research & Analysis Conducted on the Iris Data Set  
+## Requirements & Instructions  
+In order to begin my analysis of the data set, I began by importing the libraries I would need to view and manipulate the data:
+[Pandas](https://www.w3schools.com/python/pandas/pandas_intro.asp) is quite useful for analysing and manipulating data and making a dataset readable.
+[Numpy](https://www.w3schools.com/python/numpy/default.asp) is short for 'Numerical Python' and is helpful for working with number arrays 
+[Matplotlib](https://matplotlib.org/) is used for creating visualisations in Python from boxplots to scatterplots. 
+[Seaborn](https://seaborn.pydata.org/tutorial/introduction) is built on top of Matplotlib and is used for creating statisical visualisations, with added features.
+[Sys](https://www.geeksforgeeks.org/python-sys-module/) is has various useful features which assist in creating Python code such as allowing command line arguments to be passed to a script.
+
+Following this, I downloaded the Iris Data Set from [UC Irvine Machine Learning](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/). I then stored this data in a CSV file in my repository. 
+I then read used the Pandas library to read the data from the CSV file to allow me to manipulate the data with Python code.  
+As the CSV file did not include headings on the columns, I had to add the headings to the dataset.  
+
+## Summary Overview of Data Set  
+Now that the data set is downloaded, it is necessary to look at the overall data imported itself and get a general sense of the data. There are multiple built in functions available in pandas which I utilised to do this.
+I opened a txt file using write 'w' mode to write all of the basic information gathered on the dataset to this txt file.  
+
+I used the data.info function to get a concise, simple overview of the data. From this I learned that:
+- There are 150 data entries in the data set.
+- There are no Null values in the data set.
+- There are 4 columns containing numerical values and 1 class column.  
+
+I used the data.describe function to give a more complete statistical overview of the data. From this I learned:
+- There are 150 flower measurements for each feature
+- The mean 
+- The standard deviation
+- The minimum values
+- The maximum values 
+- The 25%, 50% and 75% percentiles 
+
+I used the data.shape function to check how many rows and columns are in the data set. From this I learned:
+- There are 150 rows 
+- The are 5 columns
+
+I also used the data.value_counts function to check if the dataset is balanced, i.e whether there are an equal number of rows (entries) for each of the species. From this I learned that:
+- Yes, the dataset is balanced.
+
+I then used the data.groupby function to get the minimum and maximum measurements of each feature of the species. This was very useful and I found myself making some preliminary theories based on these results:
+- The setosa minimum measurements are much less than the other features in all but Sepal Length.
+- The above is also true for the maximum measurements of the setosa.
+- Due to this insight, I positied that the Iris Setosa would be more easily distinguishable.
+
+Now that I had a better understanding of the content of the data set, I was able to begin analysing the data itself and create visualisations of the data draw conclusions.
+
+## Data Visualisation
+### Histograms
+
+
+
+### Scatterplots
+
+
+### Heatmap & Pairplot
+
+
+
+
+
+
+
 
 
 ## References
@@ -65,4 +128,5 @@ Using various combinations of these 4 features, Fisher created a linear discrimi
 15. https://stackoverflow.com/questions/72223610/dropping-invalid-columns-futurewarning
 16. https://www.statology.org/pandas-mean-by-group/
 17. https://stackoverflow.com/questions/34926517/stop-sys-stdout-from-writing-to-a-text-file
+18. https://en.wikipedia.org/wiki/Iris_flower_data_set
 

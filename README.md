@@ -178,7 +178,16 @@ As a result, in the heatmap for the Iris data set, we can see that:
 
 Finally, I created [Boxplots](https://practicaldatascience.co.uk/data-science/how-to-visualise-data-using-boxplots-in-seaborn) for the Iris flower features of each species type. While these visualisations are not as intuitive to read as the heatmap, they provide the reader with a lot of information on the data set, including any outliers, the minimum and maximum value and more.
 I used the seaborn .boxplot function to create a boxplot of the Sepal Length, Sepal Width, Petal Length and Petal Width respectively.  
-From the boxplots, I gleaned that:
+
+<img width="591" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/09dfc1a6-5c42-40a7-bc93-78fe3ba0cbf5">  
+
+<img width="591" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/c63156b9-f38f-4c42-a4a7-ddcffc914f65">  
+
+<img width="591" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/d3516f9a-028b-4279-a525-f4ec030b732f">  
+
+<img width="587" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/f2ad6fac-92a7-49e2-b18b-817c96ccdabf">  
+
+From the boxplots, I gleaned the following:
 1. The range of measurements for both petal length and petal width of the Setosa are quite narrow, especially in comparison with the Versicolour and Virginica ranges.
 2. The median of the Sepal Width of each species are relatively similar, and so it would be difficult to use these measurments to try and distinguish species type.
 3. The boxplots correspond to the previous insights that Iris Setosa has the smallest features (except for sepal width) and Setosa has outliers; Iris Versicolour has average features and Iris Virginica has the highest features.

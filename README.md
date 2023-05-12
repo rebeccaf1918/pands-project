@@ -24,7 +24,7 @@ This code is written in Python programming language and there are a few requirme
 Fisher's Iris Data Set was created by Ronald Fisher in 1936 to demonstrate ....
 
 ## The Data
-The Iris Flower Data Set is a multivariate data set which was used in a 1936 paper by Ronald Fisher titled  
+The [Iris Flower Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set) is a multivariate data set which was used in a 1936 paper by Ronald Fisher titled  
 "The Use of Multiple Measurements in Taxonomic Problems as an example of Linear Discriminant Analysis."  
 The data itself about the sepal and petal measuresments of the Iris Setosa, Iris Virginica and Iris Versicolour flowers were collected by Dr Edgar Anderson in Canada.   
 The Iris data set has long been utilised in Data Analysis, Statistics and Machine Learning, with everyone from beginners to experts being familiar with it.   
@@ -43,7 +43,8 @@ Contained in each species sample, there are 4 measurements available, measured i
 
 ![image](https://github.com/rebeccaf1918/pands-project/assets/123907810/4da42b93-c8be-4770-a872-732e612d1b11)
 
-By collecting this data, Fisher (and Anderson) wanted to see if it would be possible to determine or even predict the Iris species type based on the 4 above features alone.
+By collecting this data, Fisher wanted to see if it would be possible to determine or even predict the Iris species type based on the 4 above features alone.  
+Using various combinations of these 4 features, Fisher created a linear discriminant model to distinguish each species type from each other.
 
 
 ## References

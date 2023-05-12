@@ -100,7 +100,8 @@ Pandas includes a built-in function .hist() which I used to plot histograms for 
 I then adjusted the style and format of the histograms, including the colour, removing the background grid and setting the amount of intervals to be displayed in the histogram.
 I then saved the 4 histograms created for each of the features to a .png in the repository.
 
-<img width="301" alt="Screenshot 2023-05-12" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/1343e58b-8f67-4157-9590-d8b38dbb3d3e">
+<img width="400" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/c2f8b59a-3df1-4265-b1c0-604f866bfdcb">
+
 
 From the above histograms, I came to the following conclusions:
 1. Due to the fact the histograms do not specify the species corresponding to each feature, I could see that 
@@ -111,7 +112,15 @@ However, I decided it would be more useful to visual the data if the histograms 
 Thus, in order to do this, I needed to separate the 'Species' column into 3 parts for each of the species type. Through the information I gathered at the beginning of the project, I know that the 3 species type are split equally into 50 entries on each. I used numpy to use the formatting of numpy tuples as indexes i.e the first 50 lines are the Setosa category, 51 onwards is versicolor and so on.
 Then, I used the built-in .distplot() function which displays multiple statistical representations of numerical data, including histrograms, rug plot and kernel density estimation. I chose the distplot function as I felt it was easier to comprehend the visualisation of data with these features on the same axis.
 
-![alt text](C:\Users\rfeel\OneDrive\Desktop\pands\pands-project\Histogram of Sepal Length of the Iris Setosa, Versicolor & Virginica.png)
+<img width="392" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/830d3ac9-300d-439f-96c0-77efb244941a">  
+
+<img width="394" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/d86c4891-7915-4564-91e1-f2961c1bcb6b">
+
+<img width="392" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/2f469e31-a6af-46bd-9fee-8b9a4a8dc379">  
+
+<img width="392" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/08424ba9-3940-4297-8897-2be49cac8ed6">  
+
+
 
 
 

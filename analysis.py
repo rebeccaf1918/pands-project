@@ -136,7 +136,8 @@ plt.close()
 # Pairplot of variables and species combined
 sea.pairplot(iris_data, hue='Species')
 plt.plot()
-plt.show() ### fix up formatting
+plt.savefig('Pairplot of all the features of the Iris Setosa, Versicolour & Virginica.png')
+plt.close()
 
 # Heatmap of the correlation between each variable
 #print(iris_data.corr(method='pearson')) # kendall method of data analysis https://www.geeksforgeeks.org/python-pandas-dataframe-corr/

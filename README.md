@@ -146,20 +146,32 @@ I also completed a scatter plot displaying the relationship between Petal Length
 <img width="390" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/b8875429-7182-4ec8-9cbe-ef36d0213de9">    
 
 
-                                                                                                                                      
-The scatter plots visualised that:
-1. 
+The scatter plot of Sepal Length x Sepal Width visualised that:  
+1. While Setosa species has the largest sepal widths of all the species, it also has smaller sepal lengths in comparison to the Versicolour and Virginica. Also, the sepal lengths of the Setosa are small in relation to its relatively larger sepal widths.
+2. The Versicolour flower mostly occurs within the spectrum of the Setosa and Virginica highest and lowest values. Thus, the Versicolour sepal lengths and sepal widths lie in the middle of the Setosa and Virginica.
+3. The Virginica flower has the larger sepal lengths of the species, but its sepal widths are relatively smaller.
+
+The scatter plot of Petal Length x Petal Width visualised that:
+1. The iris Setosa has the smallest petal lengths and petal widths, and these features are smaller by a relatively large margin in comparison to the Versicolour and Virginica (i.e Setosa = smallest feature measurements)
+2. Similarly to the previous scatter plot, the Versicolour flower petal lengths and petal widths occur within the spectrum of the Setosa and Virginica highest and lowest values (i.e Versicolour = average feature measurements)
+3. The Virginica flower has the high petal lengths, as well as petal widths (i.e Virginica = highest feature measurements)
+
+I should note that at this point I also utilised the seaborn .pairplot() function to visualise the pair-wise relationships of the flower features amongst all the species in the dataset.  
 
 
 
-### Heatmap & Pairplot
+At this point, I had completed analysis and visualisations of the data which enabled me to form an opinion on what the data set was telling me. However, there are many more ways of completing statistical analysis on the data, including boxplots, violinplots and other formats of data visualisation. Such data analysis has been conducted on the Iris data set many times, but I believe that 
+In order to confirm the data insights I gleaned from the data set, I decided to use two more visualisations of the data, 
+
+### Heatmap & Boxplot
 
 
 
 
 
 
-
+## Summary & Conclusion  
+In summmary, 
 
 
 ## References

@@ -100,7 +100,10 @@ Pandas includes a built-in function .hist() which I used to plot histograms for 
 I then adjusted the style and format of the histograms, including the colour, removing the background grid and setting the amount of intervals to be displayed in the histogram.
 I then saved the 4 histograms created for each of the features to a .png in the repository.
 
-![image](C:\Users\rfeel\OneDrive\Desktop\pands\pands-project\Histograms of the Length & Width of each Variable.png)
+<img width="301" alt="Screenshot 2023-05-12" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/1343e58b-8f67-4157-9590-d8b38dbb3d3e">
+
+
+
 
 
 

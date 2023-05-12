@@ -200,20 +200,13 @@ A common theme throughout the data visualisations is that the Iris Setosa is not
 Consequently, I can make the assumption that any iris flower with a petal length of less than approx   
 2.1cm must be an Iris Setosa. Also, any Iris flower with a petal width of less than 0.6cm must be an Iris Setosa. This is evidenced by the fact that the Petal Length and Petal Width distplots have little overlap, with the Iris Setosa being quite seperate from Iris Versicolour and Iris Virginica and thus Petal Length and Petal Width are good classification features. 
 Thus, I would be able to make an educated guess distinguishing the Iris Setosa from the Iris Versicolour; and distinguishing the Iris Setosa from the Iris Virginica.  
-However, it would be more difficult to distinguish between the Iris Versicolour and Iris Virginica as they have many more instances of overlap, as evidenced in the histograms of Sepal Length and Sepal Width. Those histograms have significant overlap amongst the three species, and so would make poor classification features on their own.
-
-
-
- Specifically the petal length to petal width ratio can be helpful in distinguishing the two species
- The correlation map for the overall dataset shows a negative correlation between sepal width and petal width/length. This is likely caused by the setosa plant which has the widest sepals and narrowest/shortest petals.
-These negative correlations are non-existent in the individual species maps, suggesting that at a species level sepal width does not negatively influence petal width or length.
-The overall correlation map shows a near-perfect correlation between petal length/width. This is also evident in the scatter plot; this variable pair output is the closer to a straight line than any of the others. This is likely because while the versicolor plant has both the longest and widest petals, setosa has both the narrowest and shortest. Therefore, within the data set as a whole, long petals is likely to also mean wide petals and vice versa.
-However, within the three species, versicolor is the only group that maintains a strong correlation between these variables. This is also visible on the scatterplot; although the datapoints as a unit form a straight line, the plot doesn't appear to be linear within the setosa/versicolor species.
-Within the overall data set there is a strong positive correlation between sepal length and petal length/width. This is likely due to the versicolor plant having the longest sepals and longest/widest petals: as sepal length increases so do the petal measurements.
-This relationship is also evident in the scatter plots for these variable pairs; these plots are closest to a straight line of all variable combinations.
-The strong positive association between petal length and sepal length is also present in the versicolor and virginica plants, but not for setosa. This suggests that within the first two species groups, longer petals also indicate longer sepals, but this is not necessarily the case for setosa plants. This is clearly visible in the scatter plots, a linear relationship seems to exist between the former but not the latter.
-Within the setosa species group, a strong correlation exists between sepal length and width, to a much greater extent than the other two groups. It can therefore be assumed that longer sepals are associated with with increased sepal width within this species group.
-
+However, it would be more difficult to distinguish between the Iris Versicolour and Iris Virginica as they have many more instances of overlap, as evidenced in the histograms of Sepal Length and Sepal Width. Those histograms have significant overlap amongst the three species, and so would make poor classification features on their own.  
+The heatmap and scatterplot show that there is almost perfect correlation between petal length and petal width and so for each of the species, petal length will correspond to petal width, with the larger the petal length, the petal width will increase and vice versa. This is evident by the scatter plot of the petal length x petal width, with almost a stright line drawable through many dots in the scatterplot.  
+For Iris Setosa, its evident that there is a strong correlation between its sepal length and sepal width and thus, longer sepal lengths will mean longer sepal widths too and vice versa. The correlation between sepal length and width is not as strong within the other two species.
+However, for Iris Virginica, there is a strong correlation between petal length and petal width and thus, longer petal lengths will mean increased petal widths and vice cersa. The correlation between petal length and petal width is not as strong within the Iris Setosa and Iris Versicolour.
+However, the pairplot shows that there doesnt appear to be a species wide correlation between sepal width and petal length & width, likely due to the influence of the Iris Setosa, which has the largest sepal width and smallest measurements for petal length and petal width.
+Yet there does appear to be a species wide correlation between sepal length and petal length & width, likely due to the influence of the Iris Versicolour, which has the largest sepal lengths and largest measurements for petal length and petal width.
+Overall, it can be said that the differences set out between the Iris Setosa and the two other species is much more pronounced than any differences amongst each of the three species themselves.
 
 
 ## References

@@ -38,23 +38,14 @@ with open ("Iris_summary_data.txt", "w") as f: #w to write to file and opened it
 
 # Below is the code to produce histograms of the data as per the project requirements:
 iris_data = pd.read_csv("iris_dataset.csv", names=column_names)
-#iris_data.hist(bins=8, color='purple', edgecolor='black', grid=False, figsize=(8,8)) # this is a builtin function to create multiple separate histograms of each column (i.e sepal length, then petal width etc) 
+iris_data.hist(bins=8, color='purple', edgecolor='black', grid=False, figsize=(8,8)) # this is a builtin function to create multiple separate histograms of each column (i.e sepal length, then petal width etc) 
 # However, the function doesnt categorise based on the species type, it just displays the frequency of each variable type (e.g sepal length) without specifying the species 
-plt.suptitle('Histogram of the Length and Width of each Variable') #this function formats the title properly at the top of the image, otherwise it was showing overtop of the image
+plt.suptitle('Histograms of the Length and Width of each Variable') #this function formats the title properly at the top of the image, otherwise it was showing overtop of the image
 plt.subplots_adjust(top=0.9, hspace=0.4) #adjust space between graphs as titles were overlapping and unclear
 #plt.show() #commented out for clarity and so imaged saved will not be blank
 plt.savefig('Histograms of the Length & Width of each Variable')
 plt.close()
 
-# Heatmap of the correlation between each variable
-#print(iris_data.corr(method='pearson')) # kendall method of data analysis https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-sea.heatmap(iris_data.corr(method='pearson'), annot=True, linewidths=1) # line width is set to create outline for each rectangle for visual ease
-# Pearson method of analysis is quite useful here. 1 means total positive correlation, 0 is no correlation and 
-# -1 is total negative correlation. The results for the iris data set are across the range from 1 to -1.
-plt.suptitle('Heatmap of the correlation between each variable')
-plt.subplots_adjust(left=0.25, bottom = 0.3)
-#plt.show()
-plt.savefig("Heatmap of the Variables' Correlation")
 
 # I wanted to compare Sepal Length across the three species, Sepal Width across the three species, and so on.
 # To do this, I needed to split the species column to separate out each of the 3 species category. As I already established that each species had 50 entries,
@@ -134,7 +125,7 @@ plt.plot()
 plt.savefig('Scatter plot of Sepal Length x Sepal Width.png')  # save image to png file 
 plt.close() # so that the data is not all put on same axis; this scatter plot is created and the data stream is closed so the next scatter plot is not imposed onto it.
 
-# Scatter plot of Petal Length x Petal Width
+# Scatter plot of Petal Length x Petal Width 
 sea.scatterplot(data=iris_data, x='Petal_Length(cm)', y='Petal_Width(cm)', hue='Species') # hue is used to specify that the each species type should have a different colour
 plt.title('Correlation between Petal Length & Width (with species type specified)')
 plt.plot()
@@ -147,4 +138,13 @@ sea.pairplot(iris_data, hue='Species')
 plt.plot()
 plt.show() ### fix up formatting
 
+# Heatmap of the correlation between each variable
+#print(iris_data.corr(method='pearson')) # kendall method of data analysis https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+sea.heatmap(iris_data.corr(method='pearson'), annot=True, linewidths=1) # line width is set to create outline for each rectangle for visual ease
+# Pearson method of analysis is quite useful here. 1 means total positive correlation, 0 is no correlation and 
+# -1 is total negative correlation. The results for the iris data set are across the range from 1 to -1.
+plt.suptitle('Heatmap of the correlation between each variable')
+plt.subplots_adjust(left=0.25, bottom = 0.3)
+#plt.show()
+plt.savefig("Heatmap of the Variables' Correlation")
 

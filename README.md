@@ -63,14 +63,14 @@ As the CSV file did not include headings on the columns, I had to add the headin
 
 ## Summary Overview of Data Set  
 Now that the data set is downloaded, it is necessary to look at the overall data imported itself and get a general sense of the data. There are multiple built in functions available in pandas which I utilised to do this.
-I opened a txt file using write 'w' mode to write all of the basic information gathered on the dataset to this txt file.  
+I opened a txt file using write 'w' mode to write all of the information gathered on the dataset to this txt file.  
 
-I used the data.info function to get a concise, simple overview of the data. From this I learned that:
+I used the .info() function to get a concise, simple overview of the data. From this I learned that:
 - There are 150 data entries in the data set.
 - There are no Null values in the data set.
 - There are 4 columns containing numerical values and 1 class column.  
 
-I used the data.describe function to give a more complete statistical overview of the data. From this I learned:
+I used the .describe() function to give a more complete statistical overview of the data. From this I learned:
 - There are 150 flower measurements for each feature
 - The mean 
 - The standard deviation
@@ -78,22 +78,29 @@ I used the data.describe function to give a more complete statistical overview o
 - The maximum values 
 - The 25%, 50% and 75% percentiles 
 
-I used the data.shape function to check how many rows and columns are in the data set. From this I learned:
+I used the .shape() function to check how many rows and columns are in the data set. From this I learned:
 - There are 150 rows 
 - The are 5 columns
 
-I also used the data.value_counts function to check if the dataset is balanced, i.e whether there are an equal number of rows (entries) for each of the species. From this I learned that:
+I also used the .value_counts() function to check if the dataset is balanced, i.e whether there are an equal number of rows (entries) for each of the species. From this I learned that:
 - Yes, the dataset is balanced.
 
-I then used the data.groupby function to get the minimum and maximum measurements of each feature of the species. This was very useful and I found myself making some preliminary theories based on these results:
+I then used the .groupby() function to get the minimum and maximum measurements of each feature of the species. This was very useful and I found myself making some preliminary theories based on these results:
 - The setosa minimum measurements are much less than the other features in all but Sepal Length.
 - The above is also true for the maximum measurements of the setosa.
 - Due to this insight, I positied that the Iris Setosa would be more easily distinguishable.
 
-Now that I had a better understanding of the content of the data set, I was able to begin analysing the data itself and create visualisations of the data draw conclusions.
+Now that I had a better understanding of the content of the data set, I was able to begin creating visualisations of the data to draw conclusions.
 
 ## Data Visualisation
 ### Histograms
+Per the requirements of the project, I began by creating histograms (more accurately, distplots) of the data set.
+Histograms are very useful for plotting the frequency distributions in numerical data. I was able to use histograms to create a visual display of the distrubtion of the features of the Iris data set, with the x-axis corresponding to the feature (e.g Sepal Length) and the y-axis corresponding to the count frequency of each feature.  
+Pandas includes a built-in function .hist() which I used to plot histograms for the flower features in the dataset.
+I then adjusted the style and format of the histograms, including the colour, removing the background grid and setting the amount of intervals to be displayed in the histogram.
+I then saved the 4 histograms created for each of the features to a .png in the repository.
+
+![image](C:\Users\rfeel\OneDrive\Desktop\pands\pands-project\Histograms of the Length & Width of each Variable.png)
 
 
 

@@ -46,7 +46,6 @@ plt.subplots_adjust(top=0.9, hspace=0.4) #adjust space between graphs as titles 
 plt.savefig('Histograms of the Length & Width of each Variable')
 plt.close()
 
-
 # I wanted to compare Sepal Length across the three species, Sepal Width across the three species, and so on.
 # To do this, I needed to split the species column to separate out each of the 3 species category. As I already established that each species had 50 entries,
 # I was able to split the data using numpy tuples as indexes i.e the first 50 lines are the Setosa category, 51 onwards is versicolor and so on 
@@ -103,11 +102,8 @@ plt.savefig('Histogram of Petal Width of the Iris Setose, Versicolor & Virginica
 plt.close()
 
 
-
-
-
-
 ##### Scatter Plots ######
+
 iris_data = pd.read_csv("iris_dataset.csv", names=column_names)
 iris_data_scatter = iris_data.plot(kind='scatter', x='Sepal_Length(cm)', y='Sepal_Width(cm)', color='purple', title='Sepal Length x Sepal Width Correlation')
 plt.show()
@@ -132,20 +128,56 @@ plt.plot()
 plt.savefig('Scatter plot of Petal Length x Petal Width.png')
 plt.close()
 
-
 # Pairplot of variables and species combined
 sea.pairplot(iris_data, hue='Species')
 plt.plot()
 plt.savefig('Pairplot of all the features of the Iris Setosa, Versicolour & Virginica.png')
 plt.close()
 
+
+###### Heatmap & Boxplots ########
+
 # Heatmap of the correlation between each variable
-#print(iris_data.corr(method='pearson')) # kendall method of data analysis https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
 sea.heatmap(iris_data.corr(method='pearson'), annot=True, linewidths=1) # line width is set to create outline for each rectangle for visual ease
 # Pearson method of analysis is quite useful here. 1 means total positive correlation, 0 is no correlation and 
 # -1 is total negative correlation. The results for the iris data set are across the range from 1 to -1.
+# I set annot=True so that the Pearson values would display on each square of the heatmap.
 plt.suptitle('Heatmap of the correlation between each variable')
 plt.subplots_adjust(left=0.25, bottom = 0.3)
 #plt.show()
 plt.savefig("Heatmap of the Variables' Correlation")
+plt.close()
 
+# Boxplot of Sepal Length of each Species
+plt.figure(figsize=(10,5)) # here I set the size of the boxplot figure
+sea.boxplot(x='Species',y='Sepal_Length(cm)',data=iris_data ,palette='PuBuGn') # I used Seaborn boxplot function to create a boxplot
+plt.title('Boxplot of the Sepal Length of each species class') # and I also specified the colour palette, title and the x and y axis labels
+#plt.show() commented out for clarity
+plt.savefig('Boxplot of Sepal Length by species.png')
+plt.close()
+
+# Boxplot of Sepal Width of each Species
+plt.figure(figsize=(10,5)) 
+sea.boxplot(x='Species',y='Sepal_Width(cm)',data=iris_data ,palette='PuBuGn')
+plt.title('Boxplot of the Sepal Width of each species class')
+#plt.show()
+plt.savefig('Boxplot of Sepal Width by species.png')
+plt.close()
+
+# Boxplot of Petal Length of each Species
+plt.figure(figsize=(10,5)) 
+sea.boxplot(x='Species',y='Petal_Length(cm)',data=iris_data ,palette='PuBuGn')
+plt.title('Boxplot of the Petal Length of each species class')
+#plt.show()
+plt.savefig('Boxplot of Petal Length by species.png')
+plt.close()
+
+# Boxplot of Petal Width of each Species
+plt.figure(figsize=(10,5)) 
+sea.boxplot(x='Species',y='Petal_Width(cm)',data=iris_data ,palette='PuBuGn')
+plt.title('Boxplot of the Petal Width of each species class')
+#plt.show()
+plt.savefig('Boxplot of the Petal Width by species.png')
+plt.close()
+
+print("All of the data visualisations on the data set have been completed. \nTo view my insights into the Iris Flower data set, please visit the README on my github repository.")

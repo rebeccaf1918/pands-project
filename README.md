@@ -163,6 +163,15 @@ I should note that at this point I also utilised the seaborn .pairplot() functio
 In order to confirm the data insights I gleaned from the data set, I decided to use two more visualisations of the data.
 
 ### Heatmap & Boxplot
+[Heatmaps](https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/) are very useful for visualisation of data by presenting the analysis of the data as colours in two dimensions, i.e it shows the correlation between the features of the Iris flower species.  
+I used the built-in seaborn function .heatmap() to create the heatmap, and I specifed the correlation method to be used as Pearson. I found that this data visualisation was the easiest to understand, even for someone not very familiar with the Iris data set.  
+[Pearson Correlation](https://www.geeksforgeeks.org/python-pandas-dataframe-corr/) is commonly used for numerical variables, as are in the Iris data set. It assigns over the range from -1 to 0 to 1 for correlation visualisation, with -1 meaning total negative correlation, 0 meaning there is no correlation and 1 meaning total positive correlation.  
+As a result, in the heatmap for the Iris data set, we can see that:  
+1. There is high correlation between Petal Length and Petal Width.  
+2. There is good-high correlation between Petal Length and Sepal Width
+3. There is also good-high correlation between Petal Width and Sepal Length.
+4. Also, there is almost total negative correlation between Petal Length and Sepal Width  
+5. There is almost total negtive correlation between Petal Width and Sepal Width.
 
 
 

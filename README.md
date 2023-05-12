@@ -176,14 +176,18 @@ As a result, in the heatmap for the Iris data set, we can see that:
 4. Also, there is almost total negative correlation between Petal Length and Sepal Width  
 5. There is almost total negtive correlation between Petal Width and Sepal Width.
 
-
-
+Finally, I created [Boxplots](https://practicaldatascience.co.uk/data-science/how-to-visualise-data-using-boxplots-in-seaborn) for the Iris flower features of each species type. While these visualisations are not as intuitive to read as the heatmap, they provide the reader with a lot of information on the data set, including any outliers, the minimum and maximum value and more.
+I used the seaborn .boxplot function to create a boxplot of the Sepal Length, Sepal Width, Petal Length and Petal Width respectively.  
+From the boxplots, I gleaned that:
+1. The range of measurements for both petal length and petal width of the Setosa are quite narrow, especially in comparison with the Versicolour and Virginica ranges.
+2. The median of the Sepal Width of each species are relatively similar, and so it would be difficult to use these measurments to try and distinguish species type.
+3. The boxplots correspond to the previous insights that Iris Setosa has the smallest features (except for sepal width) and Setosa has outliers; Iris Versicolour has average features and Iris Virginica has the highest features.
 
 At this point, I had completed analysis and visualisations of the data which enabled me to form an opinion on what the data contained in relation to the Iris flower species. However, there are many more ways of completing statistical analysis on the data, including boxplots, violinplots and other formats of data visualisation. Such data analysis has been conducted on the Iris data set many times, but I believe that any further analysis would not add any new insights into the data and would just be for superficial and stylistic visualisation, rather than contributing to my understanding.
 
 ## Summary & Conclusion  
 In summmary, 
-
+=====The Iris Setosa and Iris Versicolor are very similar in size of their sepals and petals. As a result it is very difficult to tell them apart. Here, again, the visualised data provide a significant help. Even though the interpretation of the results can be tricky and carries some level of risk related to inaccuracy, the graphs of the data can back the classification decision. Specifically the petal length to petal width ratio can be helpful in distinguishing the two species
 
 ## References
 1. https://github.com/Prasanna-Mohanty/IRIS-Dataset-Analysis-Using-Python/blob/master/IRIS.ipynb

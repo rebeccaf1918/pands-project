@@ -156,19 +156,18 @@ The scatter plot of Petal Length x Petal Width visualised that:
 2. Similarly to the previous scatter plot, the Versicolour flower petal lengths and petal widths occur within the spectrum of the Setosa and Virginica highest and lowest values (i.e Versicolour = average feature measurements)
 3. The Virginica flower has the high petal lengths, as well as petal widths (i.e Virginica = highest feature measurements)
 
-I should note that at this point I also utilised the seaborn .pairplot() function to visualise the pair-wise relationships of the flower features amongst all the species in the dataset.  
+I should note that at this point I also utilised the seaborn .pairplot() function to visualise the pair-wise relationships of the flower features amongst all the species in the dataset and confirm the conclusions I already derived from the previous visualisations
 
+<img width="340" alt="image" src="https://github.com/rebeccaf1918/pands-project/assets/123907810/90acc37f-9ae0-495a-9140-6f5318a0f87b">  
 
-
-At this point, I had completed analysis and visualisations of the data which enabled me to form an opinion on what the data set was telling me. However, there are many more ways of completing statistical analysis on the data, including boxplots, violinplots and other formats of data visualisation. Such data analysis has been conducted on the Iris data set many times, but I believe that 
-In order to confirm the data insights I gleaned from the data set, I decided to use two more visualisations of the data, 
+In order to confirm the data insights I gleaned from the data set, I decided to use two more visualisations of the data.
 
 ### Heatmap & Boxplot
 
 
 
 
-
+At this point, I had completed analysis and visualisations of the data which enabled me to form an opinion on what the data contained in relation to the Iris flower species. However, there are many more ways of completing statistical analysis on the data, including boxplots, violinplots and other formats of data visualisation. Such data analysis has been conducted on the Iris data set many times, but I believe that any further analysis would not add any new insights into the data and would just be for superficial and stylistic visualisation, rather than contributing to my understanding.
 
 ## Summary & Conclusion  
 In summmary, 
